@@ -70,6 +70,9 @@ async function autenticar() {
 
         if(result.codigo === '00') {
             localStorage.setItem('result', JSON.stringify(result));
+             //SE AGREGÓ:
+            localStorage.setItem('tipoDocumento',tipoDocumento.value);
+            localStorage.setItem('numeroDocumento',numeroDocumento.value);
             window.location.replace('principal.html');
         } else {
             mostrarAlerta(result.mensaje);
