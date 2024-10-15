@@ -28,7 +28,7 @@ function mostrarAlerta(mensaje) {
 //AGREGADO: Función asincrona del logout
 async function realizarLogout(tipoDocumento, numeroDocumento) {
 
-    const url = 'http://localhost:8082/login/logout'; 
+    const url = 'http://localhost:8082/login/logout-async'; 
     const request = {
         tipoDocumento: tipoDocumento,
         numeroDocumento: numeroDocumento
